@@ -17,3 +17,8 @@
 .rounded-circle{
     max-height: 50px;
 }
+
+.card-body{
+   /* background-color:  linear-gradient(#17082e 0%, #1a0933 7%, #1a0933 80%, #0c1f4c 100%); */
+   background-color: black;
+}
