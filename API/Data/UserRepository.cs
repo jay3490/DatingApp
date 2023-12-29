@@ -4,17 +4,16 @@ using API.Interfaces;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
-
 namespace API.Data
 {
     public class UserRepository : IUserRepository
     {
-        private readonly DataContext _context;
         private readonly IMapper _mapper;
+        private readonly DataContext _context;
         public UserRepository(DataContext context, IMapper mapper)
         {
-            _mapper = mapper;
             _context = context;
+            _mapper = mapper;
         }
 
         public async Task<MemberDto> GetMemberAsync(string username)
